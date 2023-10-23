@@ -103,7 +103,10 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/tye1xtotij68ujusnw8c"
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          resData.info.cloudinaryImageId
+        }
       />
       <h3>{resData.info.name}</h3>
       <h4>{resData.info.cuisines.join(", ")}</h4>
