@@ -23,6 +23,10 @@ const Body = () => {
     );
   };
 
+  if (listOfRestaurants.length === 0) {
+    return <h1>Loading...</h1>;
+  }
+
   return (
     <div className="body">
       <div className="filter">
