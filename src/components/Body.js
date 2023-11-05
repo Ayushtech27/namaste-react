@@ -19,7 +19,7 @@ const Body = () => {
       json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
     );
     setListOfRestaurants(
-      json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
