@@ -19,3 +19,10 @@
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+# 2 Types of routing in web apps:
+
+- Client side routing
+- Server side routing
+
+Single page application: It's one page and just the components gets changed (refreshed).
