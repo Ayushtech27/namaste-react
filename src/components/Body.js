@@ -9,6 +9,8 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
+  console.log("list Of Restaurants: ", listOfRestaurants);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -16,7 +18,7 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const data = await fetch(
-        "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5354383&lng=77.26393259999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5354383&lng=77.26393259999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
 
       const json = await data.json();
@@ -95,6 +97,7 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
+            {/* If the restaurant has veg: true then add a pure veg label to it. */}
             <RestaurantCard resData={restaurant} />
           </Link>
         ))}
