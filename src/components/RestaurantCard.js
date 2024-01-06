@@ -26,7 +26,7 @@ export const withVegLabel = (RestaurantCard) => {
     return (
       <div>
         <label className="absolute bg-green-700 text-white m-2 p-2 rounded-lg">
-          Veg
+          Pure Veg
         </label>
         <RestaurantCard {...props} />
       </div>
