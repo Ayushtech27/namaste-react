@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withVegLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -8,6 +8,7 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+  const RestaurantCardVeg = withVegLabel(RestaurantCard); //withVegLable is a higher order component.
 
   console.log("list Of Restaurants: ", listOfRestaurants);
 
@@ -24,11 +25,11 @@ const Body = () => {
       const json = await data.json();
       console.log("Fetched data:", json);
       setListOfRestaurants(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
       setFilteredRestaurant(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
       console.log("List of restaurants:", listOfRestaurants);
@@ -98,7 +99,11 @@ const Body = () => {
             to={"/restaurants/" + restaurant.info.id}
           >
             {/* If the restaurant has veg: true then add a pure veg label to it. */}
-            <RestaurantCard resData={restaurant} />
+            {restaurant.info.veg ? (
+              <RestaurantCardVeg resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
