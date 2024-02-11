@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import RestaurantCard, { withVegLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -48,6 +49,8 @@ const Body = () => {
       </h1>
     );
 
+  const { loggedInUser, setUserName } = useContext(UserContext);
+
   //Conditional Rendering
   return !listOfRestaurants || listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -57,7 +60,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
-            className="border border-solid border-black"
+            className="border border-solid border-black p-1"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -90,6 +93,14 @@ const Body = () => {
           >
             Top Rated Restautants
           </button>
+        </div>
+        <div className="m-4 p-4 flex items-center">
+          <label>User Name: &nbsp;</label>
+          <input
+            className="border border-black p-1"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="flex flex-wrap">
