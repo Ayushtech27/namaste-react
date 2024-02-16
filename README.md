@@ -26,3 +26,12 @@
 - Server side routing
 
 Single page application: It's one page and just the components gets changed (refreshed).
+
+# Redux Toolkit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- Dispatch (action)
+- Secector
