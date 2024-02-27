@@ -35,3 +35,6 @@ Single page application: It's one page and just the components gets changed (ref
 - Slice (cartSlice)
 - Dispatch (action)
 - Selector
+
+- Redux toolkit uses immer library behind the scenes to deal with immutable states.
+- RTK says that either I need to mutate the existing state of return a new state.
