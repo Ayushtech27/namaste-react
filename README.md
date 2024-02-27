@@ -34,4 +34,4 @@ Single page application: It's one page and just the components gets changed (ref
 - Connect our store to our app
 - Slice (cartSlice)
 - Dispatch (action)
-- Secector
+- Selector
