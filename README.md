@@ -38,3 +38,9 @@ Single page application: It's one page and just the components gets changed (ref
 
 - Redux toolkit uses immer library behind the scenes to deal with immutable states.
 - RTK says that either I need to mutate the existing state of return a new state.
+
+# Types of Testing (Developer)
+
+- Unit Testing - Here you test your react components in isolation.
+- Integration Testing - Testing the integration of our component.
+- End to End Testing (e2e Testing) - Testing the react application as sson as the user lands on the website to the user leaves the website. And we test all the flows.
