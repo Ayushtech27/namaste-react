@@ -44,3 +44,11 @@ Single page application: It's one page and just the components gets changed (ref
 - Unit Testing - Here you test your react components in isolation.
 - Integration Testing - Testing the integration of our component.
 - End to End Testing (e2e Testing) - Testing the react application as soon as the user lands on the website to the user leaves the website. And we test all the flows.
+
+# Setting up testing in our app
+
+- Install react testing library
+- Install jest
+- Install babel dependencies
+- Configure Babel
+- Configure Parcel Config file to disable default babel transpilation
