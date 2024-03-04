@@ -43,4 +43,4 @@ Single page application: It's one page and just the components gets changed (ref
 
 - Unit Testing - Here you test your react components in isolation.
 - Integration Testing - Testing the integration of our component.
-- End to End Testing (e2e Testing) - Testing the react application as sson as the user lands on the website to the user leaves the website. And we test all the flows.
+- End to End Testing (e2e Testing) - Testing the react application as soon as the user lands on the website to the user leaves the website. And we test all the flows.
