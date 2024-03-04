@@ -52,3 +52,4 @@ Single page application: It's one page and just the components gets changed (ref
 - Install babel dependencies
 - Configure Babel
 - Configure Parcel Config file to disable default babel transpilation
+- Jest Configuration
