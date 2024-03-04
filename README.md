@@ -54,3 +54,5 @@ Single page application: It's one page and just the components gets changed (ref
 - Configure Parcel Config file to disable default babel transpilation
 - Jest Configuration
 - Install jsdom library
+- Install @babel/preset-react to make jsx work in test cases.
+- Include @babel/preset-react inside babel config.
