@@ -1,0 +1,68 @@
+{
+  "info": {
+    "id": "5926",
+    "name": "Burger King",
+    "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+    "locality": "Epicuria Food Mall",
+    "areaName": "Nehru Place",
+    "costForTwo": "₹350 for two",
+    "cuisines": ["Burgers", "American"],
+    "avgRating": 4.3,
+    "parentId": "166",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "10K+",
+    "veg": true,
+    "sla": {
+      "deliveryTime": 28,
+      "lastMileTravel": 3,
+      "serviceability": "SERVICEABLE",
+      "slaString": "28 mins",
+      "lastMileTravelString": "3.0 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2024-03-06 06:00:00",
+      "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {},
+        "textBased": {},
+        "textExtendedBadges": {}
+      }
+    },
+    "aggregatedDiscountInfoV3": {
+      "header": "ITEMS",
+      "subHeader": "AT ₹139"
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {
+    "context": "seo-data-a46483ca-6357-403c-ac1a-a13b5d2da25c"
+  },
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/burger-king-epicuria-food-mall-nehru-place-delhi-5926",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
