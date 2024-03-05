@@ -11,7 +11,7 @@ const Body = () => {
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const RestaurantCardVeg = withVegLabel(RestaurantCard); //withVegLable is a higher order component.
 
-  console.log("list Of Restaurants: ", listOfRestaurants);
+  // console.log("list Of Restaurants: ", listOfRestaurants);
 
   useEffect(() => {
     fetchData();
@@ -24,7 +24,7 @@ const Body = () => {
       );
 
       const json = await data.json();
-      console.log("Fetched data:", json);
+      // console.log("Fetched data:", json);
       setListOfRestaurants(
         json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
@@ -33,8 +33,8 @@ const Body = () => {
         json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
-      console.log("List of restaurants:", listOfRestaurants);
-      console.log("Filtered restaurants:", filteredRestaurant);
+      // console.log("List of restaurants:", listOfRestaurants);
+      // console.log("Filtered restaurants:", filteredRestaurant);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -60,6 +60,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black p-1"
             value={searchText}
             onChange={(e) => {
@@ -91,7 +92,7 @@ const Body = () => {
               setFilteredRestaurant(filteredList);
             }}
           >
-            Top Rated Restautants
+            Top Rated Restaurants
           </button>
         </div>
         <div className="m-4 p-4 flex items-center">
